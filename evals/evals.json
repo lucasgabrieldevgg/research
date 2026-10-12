@@ -1,0 +1,23 @@
+{
+  "skill_name": "scholar",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Research the current market for vector databases: who are the players, how is it growing, and how do the open-source options compare on maturity. I need sources I can trust.",
+      "expected_output": "Runs the full research loop: frames as market+technical hybrid, plans axes, gathers from free toolbox (GitHub API for ecosystem maturity, GDELT/HN for coverage and sentiment, vendor docs as Primary), verifies with tier/confidence ladders, synthesizes with comparison tables and gap analysis, delivers a cited report with methodology note and freshness note. Every claim carries a citation; conflicting market-size figures are reported, not silently resolved.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "I want to add Wikipedia lookups and arXiv search to my Next.js app so users can see background info and recent papers on any topic. Keep it free.",
+      "expected_output": "Reads free-apis.md and integration.md; implements zero-dependency clients (Node 18+ fetch) for Wikipedia REST/Action and arXiv Atom API with proper User-Agent etiquette, retry/backoff for 429s, query-level cache, and no API keys required; provides Python httpx equivalents if the project has Python; explains env contract even though these APIs are keyless (future-proofing), and adds test fixtures recorded from real responses.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Deep dive: what does the academic literature actually say about retrieval-augmented generation failing? I only care about 2023 onward and I want to know what's unsettled.",
+      "expected_output": "Academic-type run: OpenAlex and Semantic Scholar as primary discovery, arXiv for the newest layer with (preprint) marking, peer-reviewed priority per the academic sub-ladder, deep-read mandate on 8-15 load-bearing papers with structured notes, taxonomy the evidence suggests (failure modes), explicit gaps section ('what remains unsettled' directly answered), citation keys and bibliography. No fabrication of papers or results.",
+      "files": []
+    }
+  ]
+}

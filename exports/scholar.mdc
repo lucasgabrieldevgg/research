@@ -1,0 +1,53 @@
+---
+description: scholar — research management: rigorous multi-source research + 50+ verified research APIs (free & paid), MCP servers, datasets, feeds. Apply when researching any topic, evaluating sources, writing cited reports, or integrating research data into a project.
+globs:
+alwaysApply: true
+---
+
+# scholar (Cursor rules export)
+
+The condensed form of the `scholar` skill. The full skill lives in the `theskill` ecosystem — this file carries the operating rules.
+
+## The research contract
+
+1. Every claim carries a citation — URL, accessed date, confidence, tier.
+2. Critical claims need 2+ independent sources or an explicit `confidence: Low` flag.
+3. No fabrication. "No sources found for X" is a valid finding.
+4. No silent conflict resolution — report disagreements between sources.
+5. Write-as-you-go: every research stage writes to disk immediately.
+6. Abstracts are not reading — load-bearing sources get actually read.
+
+## The loop
+
+**Frame** → classify: one of 12 research types (market / domain / technical / competitive / product / academic / person-org / financial / legal / trend / community / social-pulse); pick depth (quick / standard / deep); set the recency window. Interview only if the prompt is vague.
+
+**Plan** → break into 3–20 axes; assign a source strategy per axis; declare time and cost budgets. Write `plan.md`.
+
+**Gather** → per axis: call the right sources, fetch the pages behind results, write `{axis}.md` as prose with inline citations. Source tiers: Primary (official docs, filings, peer-reviewed) / Established (major publications, analyst firms) / Low (blogs, forums — usable but flagged).
+
+**Verify** → triangulate critical claims across 2+ independent origina (two outlets rewriting one press release = one source); run the conflict protocol (report both figures + diagnose the definition delta); maintain the source ledger (URL, accessed, tier, claim supported).
+
+**Synthesize** → deep-read the 5–15 load-bearing sources with structured notes; build the taxonomy the evidence suggests; comparison tables with "no data" cells where honest; separate "According to [Source]" from "This suggests".
+
+**Deliver** → type-specific template with methodology note, gaps section, unresolved conflicts, freshness note for volatile topics ("snapshot as of {date}; re-run within 30 days").
+
+## The toolbox (selection)
+
+**Free, no key**: Wikipedia REST/Action + Wikidata SPARQL · OpenAlex (add `mailto` for the polite pool) · arXiv · Crossref · Semantic Scholar · Europe PMC · PubMed · GDELT (news) · HN Algolia · Stack Exchange · GitHub · Open Library · World Bank · Open-Meteo · Nominatim/OSM. **Free with instant key**: FRED · US Census · CourtListener · Congress.gov.
+
+**Paid (worth it)**: Brave Search (independent index, linear pricing) · Tavily (search+extract+crawl for agents) · Exa (neural/semantic search) · SerpAPI (vertical engines: Scholar, Patents) · Serper (volume per dollar) · Perplexity Sonar (synthesized answers as cross-checks).
+
+**Beyond APIs**: MCP servers (`mcp-server-fetch`, `wikipedia-mcp`, `arxiv-mcp-server`, `pubmedmcp`, `@modelcontextprotocol/server-brave-search`, `tavily-mcp`, `exa-mcp-server`) · datasets (Hugging Face, Common Crawl, Internet Archive) · scraping (trafilatura — honors robots.txt, 1 req/s, real UA) · monitoring (feedparser + hnrss.org).
+
+## Integration rules
+
+- Keys in env vars only; missing key = provider disabled, never an import-time crash.
+- Retry only 429/5xx with exponential backoff and `Retry-After` respect; fail fast on other 4xx.
+- Cache at query level (encyclopedic 24h, news minutes, paid ~1h); meter paid calls and cap daily spend architecturally.
+- Test with recorded fixtures — CI is keyless, deterministic, offline.
+
+## Final gate
+
+> Could a reader audit any sentence in the report back to a ledger entry — and does every gap, conflict, and low-confidence claim appear in the open?
+
+If not, it's not done. Research ships at *verified and cited* — not at *plausible*.

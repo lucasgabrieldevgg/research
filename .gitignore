@@ -1,0 +1,6 @@
+.env
+.cache/
+research/
+node_modules/
+__pycache__/
+*.pyc

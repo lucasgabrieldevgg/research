@@ -65,3 +65,7 @@ Depth modes: **Quick** (narrow, time-boxed — auto-scope, one pass), **Standard
 - Generating fiction, marketing copy, or any content that doesn't rest on sources (that's the sibling craftsmanship/creative skills' job).
 - Long-running production crawlers — this skill scrapes pages, not the web.
 - Statistical analysis of gathered data once it's in hand (pandas-type work) — this skill gathers and verifies the data; it doesn't model it.
+
+## Sources
+
+This skill is an original synthesis (MIT) merging upstream skills — `samber/cc-skills` deep-research (MIT), `lingzhi227/agent-research-skills` (credited), `mvanhorn/last30days-skill` (MIT), plus architectural reference from `Imbad0202/academic-research-skills` (CC, no text merged). The API, MCP, dataset, and pricing catalogs are original live-verified work. Full credits and licenses: `ATTRIBUTION.md`.

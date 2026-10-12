@@ -51,3 +51,6 @@ The condensed form of the `research` skill — the full skill lives at github.co
 > Could a reader audit any sentence in the report back to a ledger entry — and does every gap, conflict, and low-confidence claim appear in the open?
 
 If not, it's not done. Research ships at *verified and cited* — not at *plausible*.
+
+---
+Sources & attribution: this export condenses the `research` skill (github.com/lucasgabrieldevgg/research), an original synthesis (MIT) merging samber/cc-skills deep-research (MIT), lingzhi227/agent-research-skills (unlicensed, credited), and mvanhorn/last30days-skill (MIT), with architectural reference from Imbad0202/academic-research-skills (CC, no text merged). All API, MCP, dataset, and pricing verification is original live-checked work for this repo. Full credits: ATTRIBUTION.md in the repo.

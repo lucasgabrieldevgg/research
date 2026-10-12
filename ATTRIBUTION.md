@@ -13,6 +13,7 @@
 
 ## Original verification work
 
+- **Upstream landscape survey**: 5 candidate repositories cloned and studied before synthesis (GitHub + ClawHub search, January 2026). `Orchestra-Research/AI-Research-SKILLs` (MIT) was surveyed and excluded by scope decision — it targets AI/ML-engineering research (fine-tuning, distributed training, inference), not multi-source web research; no content merged.
 - **Live API verification**: ~40 free-API endpoints tested (HTTP status, latency, JSON response shape) from this project's sandbox in January 2026; datacenter-IP blocks documented as ⚠ with failure-mode semantics. Results in the repo's research notes, reflected throughout `references/free-apis.md`.
 - **MCP package verification**: npm/PyPI registry checks with exact versions for the 11 servers listed in `references/beyond-apis.md`.
 - **Paid pricing readings**: vendor pricing pages fetched January 2026 (SerpAPI, Tavily reachable; others documented as indicative with verify-current guidance).

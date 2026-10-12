@@ -1,6 +1,6 @@
 # Attribution & Sources
 
-`scholar` is an original synthesis commissioned for this repo: the research-method core was merged from three upstream skills, and the entire API/MCP/tooling catalog was verified live (January 2026) for this project — endpoint reachability, response shapes, package versions, and pricing-page readings. The synthesis, structure, and merged rule set are MIT. Upstream material retains its original license.
+`research` is an original synthesis commissioned for this repo: the research-method core was merged from three upstream skills, and the entire API/MCP/tooling catalog was verified live (January 2026) for this project — endpoint reachability, response shapes, package versions, and pricing-page readings. The synthesis, structure, and merged rule set are MIT. Upstream material retains its original license.
 
 ## Upstream skills (merged)
 
@@ -27,4 +27,4 @@
 
 Any errors in the merged synthesis are this repo's, not theirs.
 
-If you redistribute `scholar`, keep this file and the per-file credits with it.
+If you redistribute `research`, keep this file and the per-file credits with it.

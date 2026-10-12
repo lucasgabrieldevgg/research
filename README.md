@@ -1,4 +1,4 @@
-# scholar
+# research
 
 A big skill for **research management** — running rigorous multi-source research and wiring research data into projects. Born from merging the best research-management skills found on GitHub/ClawHub with a live-verified catalog of free research APIs.
 
@@ -19,16 +19,16 @@ research converts them into a verified, cited, decision-ready picture.
 | **Beyond APIs** (`references/beyond-apis.md`) | MCP servers (verified packages + config), bulk datasets (HF, Common Crawl, Internet Archive), polite scraping (trafilatura), RSS/Atom monitoring (feedparser) |
 | **Integration patterns** (`references/integration.md`) | Env contract, zero-dep clients, retry/backoff, query cache, free-first provider router, cost meter, test fixtures |
 
-Plus a Cursor rules export at `exports/scholar.mdc`.
+Plus a Cursor rules export at `exports/research.mdc`.
 
 ## Install
 
 **Claude Code / GLM / any SKILL.md host:**
 ```bash
-git clone https://github.com/lucasgabrieldevgg/scholar.git ~/.claude/skills/scholar
+git clone https://github.com/lucasgabrieldevgg/research.git ~/.claude/skills/research
 ```
 
-**Cursor:** copy `exports/scholar.mdc` to `.cursor/rules/scholar.mdc`.
+**Cursor:** copy `exports/research.mdc` to `.cursor/rules/research.mdc`.
 
 **ClawHub / skills.sh:** the folder is standard skill layout — publish as-is.
 
@@ -42,7 +42,7 @@ Every free-API endpoint in `references/free-apis.md` was live-tested (status, la
 
 ## Attribution
 
-`scholar` is an original synthesis (MIT) merging upstream material from `samber/cc-skills` (MIT), `lingzhi227/agent-research-skills`, and `mvanhorn/last30days-skill` (MIT), plus original live API verification. See [`ATTRIBUTION.md`](ATTRIBUTION.md).
+`research` is an original synthesis (MIT) merging upstream material from `samber/cc-skills` (MIT), `lingzhi227/agent-research-skills`, and `mvanhorn/last30days-skill` (MIT), plus original live API verification. See [`ATTRIBUTION.md`](ATTRIBUTION.md).
 
 ## License
 

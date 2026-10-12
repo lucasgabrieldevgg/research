@@ -1,12 +1,12 @@
 ---
-description: scholar — research management: rigorous multi-source research + 50+ verified research APIs (free & paid), MCP servers, datasets, feeds. Apply when researching any topic, evaluating sources, writing cited reports, or integrating research data into a project.
+description: research management skill — rigorous multi-source research + 50+ verified research APIs (free & paid), MCP servers, datasets, feeds. Apply when researching any topic, evaluating sources, writing cited reports, or integrating research data into a project.
 globs:
 alwaysApply: true
 ---
 
-# scholar (Cursor rules export)
+# research (Cursor rules export)
 
-The condensed form of the `scholar` skill. The full skill lives in the `theskill` ecosystem — this file carries the operating rules.
+The condensed form of the `research` skill — the full skill lives at github.com/lucasgabrieldevgg/research; this file carries the operating rules.
 
 ## The research contract
 

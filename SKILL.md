@@ -1,13 +1,13 @@
 ---
-name: scholar
+name: research
 description: "Research management: run rigorous multi-source research and wire research data sources into projects. Two disciplines in one skill. TRACK 1 - METHOD: deep research as a managed process — frame the question (12 research types: market, domain, technical, competitive, product, academic, person/org, financial, legal, trend, community, social-pulse), plan research axes, gather with parallel fan-out, verify sources with a tier ladder (Primary/Established/Low) and confidence tracking (High requires 2+ independent sources), synthesize with structured notes and fact-vs-synthesis separation, and deliver cited reports with gaps and conflicts stated honestly. TRACK 2 - TOOLBOX: 50+ free research APIs live-verified (Wikipedia/Wikidata, OpenAlex, arXiv, Crossref, Semantic Scholar, Europe PMC, PubMed, GDELT, HN, Stack Exchange, GitHub, World Bank, Open-Meteo, Nominatim...), 6 paid APIs worth the money (Brave Search, Tavily, Exa, SerpAPI, Serper, Perplexity Sonar), MCP servers (wikipedia-mcp, arxiv-mcp, brave-search, fetch, tavily-mcp...), bulk datasets (Hugging Face, Common Crawl, Internet Archive), polite scraping (trafilatura), and RSS/Atom monitoring (feedparser) — each with TypeScript and Python integration patterns. Use this skill for ANY research task: 'research X', 'deep dive', 'literature review', 'what's the state of the art', 'competitive analysis', 'market landscape', 'who are the players', 'catch me up on X', 'monitor this topic', 'find papers on', 'build me a research dashboard/API integration', 'add Wikipedia/arXiv/news data to my app' — even when the user just says 'look into this'. Before delivering any research artifact, run its quality gates."
 version: 1.0.0
 license: MIT for the synthesis; upstream content keeps its own licenses - see ATTRIBUTION.md
 ---
 
-# scholar — research as a managed process
+# research — deep research as a managed process
 
-`scholar` runs research the way a senior analyst would: frame before fetching, evaluate before believing, synthesize before writing — and it knows exactly which free API, paid API, MCP server, dataset, or feed serves each kind of question.
+`research` works the way a senior analyst would: frame before fetching, evaluate before believing, synthesize before writing — and it knows exactly which free API, paid API, MCP server, dataset, or feed serves each kind of question.
 
 ## The research contract
 
@@ -64,4 +64,4 @@ Depth modes: **Quick** (narrow, time-boxed — auto-scope, one pass), **Standard
 
 - Generating fiction, marketing copy, or any content that doesn't rest on sources (that's the sibling craftsmanship/creative skills' job).
 - Long-running production crawlers — this skill scrapes pages, not the web.
-- Statistical analysis of gathered data once it's in hand (pandas-type work) — scholar gathers and verifies the data; it doesn't model it.
+- Statistical analysis of gathered data once it's in hand (pandas-type work) — this skill gathers and verifies the data; it doesn't model it.
